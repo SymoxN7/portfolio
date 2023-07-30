@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  background-color:#0c5555;
+  height: 150px;
+}
+
+header nav {
+  float: right;
+  padding-top: 40px;
+  margin-right: 150px;
+}
+
+header h1 {
+  width: 360px;
+  height: 150px;
+  display: inline-block;
+  font-family: "Lucida Sans";
+  font-size: 270%;
+  text;
+  background-color:#343535;
+  text-align:right;
+  color:#138282;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  float: right;
+}
+
+header li a {
+  display: inline-block;
+  background-color: #343535;
+  text-decoration: none;
+  text-align: center;
+  font: inherit;
+  font-size: 170%;
+  color: #138282;
+  padding: 14px 16px;
+}
+
+.hero-banner {
+  height: 400px;
+  width: 100%;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-banner h2{
+  background-color: #0c5555;
+  width: 215px;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0
+}
+
+p {
+  margin: 0;
+}
