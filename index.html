@@ -12,7 +12,7 @@
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Simon Allsopp / Web Developer</h1>
+    <h1>Simon Allsopp / Web Developer</Web></h1>
     <nav>
       <ul>
         <li>
@@ -33,16 +33,41 @@
     <!-- about me -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
+      <p> Hi i'm Simon, I'm a Website Developer based in Birmingham, UK.</p>
     </section>
 
     <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Work</h2>
+        <section class="gallery">
+          <figure class="gallery__item gallery__item--1">
+            <img src="images/02-portfolio-1.jpg">
+          </figure>
+          <figure class="gallery__item gallery__item--2">
+            <img src="images/02-portfolio-2.jpg">
+          </figure>
+          <figure class="gallery__item gallery__item--3">
+            <img src="images/02-portfolio-3.jpg">
+          </figure>
+          <figure class="gallery__item gallery__item--4">
+            <img src="images/02-portfolio-4.jpg">
+          </figure>
+        </section>
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
+    <section class="page-section-contact" id="contact">
       <h2>Contact Me</h2>
+      <form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
     </section>
   </main>
 </body>
