@@ -5,67 +5,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Simon Allsopp // Web Developer</title>
+  <title>Lernantino // Web Developer</title>
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <section class="name">
-    <h1>Simon Allsopp / Web Developer</h1>
-    </section>
+    <h1>Lernantino</h1>
     <nav>
-      <ul>
-        <li>
-          <a href="#About Me">About Me</a>
-          <a href="#Work">Work</a>
-          <a href="#Contact Me">Contact Me</a>
-        </li>
-      </ul>
+      <a href="#about">About me</a>
+      <a href="#work">My Work</a>
+      <a href="#contact">Contact me</a>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
+    <div>
       <h2>Cool subtitle here!</h2>
+    </div>
   </section>
 
   <main class="page-wrapper">
     <!-- about me -->
-    <section class="about-me" id="about">
+    <section class="page-section" id="about">
       <h2>About Me</h2>
-      <p> Hi i'm Simon, I'm a Website Developer based in Birmingham, UK.</p>
+        <div>
+          <p>Hi! My name is Simon Allsopp</p>
+          <p>I am a Web Developer based in Birmingham, UK</p>
+        </div>
     </section>
 
-  <!-- portfolio container -->
+    <!-- portfolio container -->
     <section class="page-section" id="work">
       <h2>Work</h2>
-      <section class="galleryGrid">
-        <figure class="galleryImg" id="project1"></figure>
-          <div class="projectHeading">Project 1</div>
-        <figure class="galleryImg" id="project2"></figure>
-          <div class="projectHeading">Project 2</div>
-        <figure class="galleryImg" id="project3"></figure>
-          <div class="projectHeading">Project 3</div>
-        <figure class="galleryImg" id="project4"></figure>
-          <div class="projectHeading">Project 4</div>
-      </section>
+      <div class="work-flex">
+        <a href="#" class="work-item-1">
+          <div>
+            <h1>Project 1</h1>
+          </div>
+      </div>
     </section>
 
     <!-- contact -->
-    <section class="page-section-contact" id="contact">
+    <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="hidden" name="contact_number">
-        <label>Name</label>
-        <input type="text" name="user_name">
-        <label>Email</label>
-        <input type="email" name="user_email">
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send">
-    </form>
     </section>
   </main>
 </body>
