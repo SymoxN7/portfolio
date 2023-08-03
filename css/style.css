@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+/*main body style*/
 body {
   margin: 0;
   padding: 0;
@@ -10,21 +11,37 @@ body {
   background-color:#0c5555;
 }
 
+/*header style*/
 header {
+  display: flex;
   background-color:#0c5555;
   height: 150px;
+  flex-direction: row;
 }
 
+/*header placement for About Me, Work and Contact Me on the nav bar*/
 header nav {
-  float: right;
+  display: flex;
+  flex-direction: row;
   padding-top: 40px;
   margin-right: 150px;
+  justify-content: flex-end;
 }
 
+/*header placement for "Simon Allsopp / Web Developer" on the nav bar*/
+header .name {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 100px;
+  width: 1200px;
+}
+
+/*header text style for "Simon Allsopp / Web Developer"*/
 header h1 {
   width: 360px;
   height: 150px;
-  display: inline-block;
+  display: flex;
+  justify-content: flex-start;
   font-family: "Arial";
   font-size: 270%;
   background-color:#343535;
@@ -32,17 +49,14 @@ header h1 {
   color:#159b9b;
 }
 
+/*header style for the list*/
 header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   position: relative;
 }
-
-header li {
-  float: right;
-}
-
+/*header style for the text in the list*/
 header li a {
   display: inline-block;
   background-color: #343535;
@@ -54,96 +68,123 @@ header li a {
   padding: 14px 16px;
 }
 
+/*link and placement of the first background picture*/
 .hero-banner {
   height: 400px;
   width: 100%;
   background-image: url("../images/02-hero-bg.jpg");
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/*style and placement of the sub-title*/
 .hero-banner h2{
   background-color: #0c5555;
   width: 215px;
   margin: 0;
   padding: 0;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   text-align: center;
+  background: rgb(0,0,0,0.70);
+    width: 100%;
+    padding: 20px 40px;
 }
 
-main .page-section {
-  background-color:#0c5555;
-  margin: 0;
+/*placement of the About Me container*/
+main .about-me {
+  margin-top: 20px;
   padding: 0;
-  align-content: center;
-  line-height: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+/*text style and placement of the About Me header*/
 main h2 {
-  background-color:#343535;
-  color:#159b9b;
-  width: 150px;
-  text-align: center;
-}
-
-main p {
-  display: inline;
+  display:flex;
   background-color:#343535;
   color:white;
-  width: 300px;
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+}
+
+/*text style and placement of the About Me paragraph*/
+main .about-me p {
+  display: flex;
+  background-color:#343535;
+  color:white;
+  width: 360px;
   font-family:inherit;
   font-size: 130%;
+  margin-top: 20px;
 }
+
 
 main img {
   display: block;
   height: 500px;
 }
 
-.gallery {
+main section h2{
+  display: flex;
+  background-color: #343535;
+  color: white;
+  width: 150px;
+  text-align: center;
+  justify-content: center;
+}
+
+.galleryGrid {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: repeat(2, 9vw);
-  grid-gap: 15px;
+  margin: 0px 5%;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "project1 project1 project1"
+  "project1 project1 project1"
+  "project2 project3 project";
 }
 
-.gallery_img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+#project1 {
+  background-image: url("../images/02-portfolio-1.jpg");
+  grid-area: project1
 }
 
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
+#project2 {
+  background-image: url("../images/02-portfolio-2.jpg");
+  grid-area: project2
 }
 
-.gallery__item--2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+#project3 {
+  background-image: url("../images/02-portfolio-3.jpg");
+  grid-area: project3
 }
 
-.gallery__item--3 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 6;
-  grid-row-end: 7;
+#project4 {
+  background-image: url("../images/02-portfolio-4.jpg");
+  grid-area: project4
 }
 
-.gallery__item--4 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 6;
-  grid-row-end: 7;
+.galleryImg{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.page-section-contact {
-  margin: 10px;
+.projectHeading{
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color:white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
 }
 
 main form {
