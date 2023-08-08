@@ -22,15 +22,15 @@ In the "Work" sections the largest image is also a link to my Refactoring projec
 
 Below is a screenshot of the header/nav sections of the site
 
-```md
+
 ![My Portfolio](images/portfolio_scrn.png)
-```
+
 
 Below is a screenshow showing the websites mobile adaptation
 
-```md
+
 ![My Mobile Portfolio](images/mobile_portfolio_scrn.png)
-```
+
 
 ## License
 
